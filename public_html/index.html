@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Anmol Nagpal (Sheridan)
+-->
+<html>
+    <head>
+        <title>Caesar Cipher</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script/script.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div>
+            <h1>CAESAR CIPHER</h1>
+            <a href="http://practicalcryptography.com/ciphers/caesar-cipher/#javascript-example-of-the-caesar-cipher" target="BLANK">
+                The Caesar cipher is one of the earliest known and simplest ciphers. 
+                It is a type of substitution cipher in which each letter in the 
+                plaintext is 'shifted' a certain number of places down the alphabet...</a><br>
+            Shift Amount:<input type="number" min="0" max="25" id="shift" value = 1><br>
+            Plaintext:<input type="text" id="plain-text" class="field"><br>
+            <input type="button" value="ENCRYPT" id="encrypt" class="button" onclick="encrypt();"><br>
+            CipherText:<input type="text" id="cipher-text" class="field"><br>
+            <input type="button" value="DECRYPT" id="decrypt" class="button" onclick="decrypt();"><br>
+        </div>
+        <footer>
+            <p>Anmol Nagpal. 2019.</p>
+        </footer>
+    </body>
+</html>
