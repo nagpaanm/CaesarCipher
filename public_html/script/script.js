@@ -24,7 +24,10 @@ function encrypt() {
         var letter = encryptionMessage.charAt(i).toLowerCase();
         if (letter === " ") {
             decryptedMessage += " ";
-        } else {
+        } else if(!contains(letter)){
+            decryptedMessage += letter;
+        }
+        else {
             var letterPosition = +alphabet.indexOf(letter);
             if (+letterPosition + +shiftAmount > +alphabet.length - +1) {
                 letterPosition = +letterPosition + +shiftAmount - +alphabet.length;
@@ -54,7 +57,10 @@ function decrypt(){
         var letter = decryptionMessage.charAt(i).toLowerCase();
         if (letter === " ") {
             encryptedMessage += " ";
-        } else {
+        }else if(!contains(letter)){
+            encryptedMessage += letter;
+        }
+        else {
             var letterPosition = +alphabet.indexOf(letter);
             if (+letterPosition - +shiftAmount < 0) {
                 letterPosition = +letterPosition - +shiftAmount + +alphabet.length;
@@ -69,3 +75,12 @@ function decrypt(){
     encryptionMessage.setAttribute("value", encryptedMessage);
 }
 
+function contains(letter){
+    for (var i = 0; i < alphabet.length; i++){
+        if(letter === alphabet[i]){
+            return true;
+        }
+    }
+    
+    return false;
+}

@@ -4,7 +4,9 @@ Anmol Nagpal (sheridan))
 
 body{
     text-align:center;
-    font-size:1.5em;
+    font-size:1em;
+    margin:0;
+    padding:0;
 }
 div{
     margin-bottom:8%;
@@ -14,9 +16,10 @@ h1{
 }
 
 a{
-    font-size:0.8em;
     font-style:italic;
     text-decoration: none;
+    margin: 2% 0;
+    display:block;
 }
 
 a:hover{
@@ -24,21 +27,19 @@ a:hover{
 }
 
 input{
-    font-size:1.15em;
     margin:1%;
 }
 
 .field{
-    width:80%;
-    height: 75px;
-    margin: 3% 0;
+    width:50%;
+    height:25px;
+    margin: 3% 0 0 0;
 }
 
 .button{
     border:0px;
     color:white;
-    font-size:1em;
-    padding:10px;
+    padding:1%;
     box-shadow: 0 0 5px 0 black;
 }
 
@@ -50,8 +51,21 @@ input{
     background-color:#e84a3f;
 }
 
-footer{
+
+.button:hover{
+    color:black;
+    transition:color 1s;
+}
+
+.button:not(hover){
     color:white;
-    background-color:black;
-    padding:3%;
+    transition:color 1s;
+}
+
+footer{
+    position:absolute;
+    color:white;
+    background:linear-gradient(darkcyan, darkslategrey);
+    bottom:0;
+    width:100%;
 }
