@@ -1,2 +1,2 @@
 # CaesarCipher
-Caesar Cipher Encryptor/Decryptor - made using JavaScript
+A Caesar Cipher Encryption/Decryption algorithm - made using JavaScript.
